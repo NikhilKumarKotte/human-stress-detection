@@ -1,7 +1,5 @@
-## 
+this project is used to detected the stress level of humans
 
-This source code has been exported from [Caffeine](https://caffeine.ai/)
+we give a input or we use the webcam to capture the human,later it reads the face and body posture and compares with the exosting and trained data.
+the final output is given
 
-### Coming Soon
-
-We are working on tools to help you build locally and deploy your apps back to caffeine.
