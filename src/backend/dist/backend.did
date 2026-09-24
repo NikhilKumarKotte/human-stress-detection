@@ -1,0 +1,15 @@
+type StressPrediction = 
+ record {
+   confidence: float64;
+   method: text;
+   stressed: bool;
+ };
+service : {
+  getStressDetectionMethods: () -> (vec text) query;
+  processFacialAnalysisResult: (isStressed: bool, confidence: float64) ->
+   (StressPrediction);
+  processTextAnalysisResult: (isStressed: bool, confidence: float64) ->
+   (StressPrediction);
+  processVoiceAnalysisResult: (isStressed: bool, confidence: float64) ->
+   (StressPrediction);
+}
